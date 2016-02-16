@@ -1,6 +1,6 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.xml
-.xsd
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
+*.xml
+*.xsd
