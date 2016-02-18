@@ -16,3 +16,5 @@ TEI=xmlToDataFrame(colClasses=c("numeric"),getNodeSet(xmldata,"//TEI"))
 DoseData <- data.frame(AgeGroup,ExamGroup,ExposureType,BodyPart,EI,DI,TEI)
 DoseData <- rename(DoseData,c(text="AgeGroup",text.1="ExamGroup",text.2="ExposureType",text.3="BodyPart",text.4="EI",text.5="DI",text.6="TEI"))
 
+mean_BodyPart_EI <- aggregate(DoseData$EI,by=list(DoseData$BodyPart),FUN=mean)
+mean_AgeGroup_EI <- aggregate(DoseData$EI,by=list(DoseData$AgeGroup),FUN=mean)
