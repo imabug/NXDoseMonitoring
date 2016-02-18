@@ -18,3 +18,4 @@ DoseData <- rename(DoseData,c(text="AgeGroup",text.1="ExamGroup",text.2="Exposur
 
 mean_BodyPart_EI <- aggregate(DoseData$EI,by=list(DoseData$BodyPart),FUN=mean)
 mean_AgeGroup_EI <- aggregate(DoseData$EI,by=list(DoseData$AgeGroup),FUN=mean)
+mean_ExamGroup_EI <- aggregate(DoseData$EI,by=list(DoseData$ExamGroup),FUN=mean)
