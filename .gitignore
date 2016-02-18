@@ -4,3 +4,4 @@
 *.Ruserdata
 *.xml
 *.xsd
+.Rproj.user
